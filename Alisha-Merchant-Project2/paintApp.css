@@ -1,0 +1,89 @@
+/* Body & Background */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Center Alignment */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* H1 Heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Canvas Styling */
+#myCanvas {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
+}
+
+/* Bottom Control Area */
+.control-panel {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow buttons to wrap to next line if needed */
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f2f2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Color Picker & Button Styling */
+input[type="color"],
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Convert button text to uppercase */
+    margin: 5px;
+    /* Add spacing between buttons */
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="color"] {
+    background-color: #fff;
+}
+
+button {
+    background-color: #e04d40;
+    /* Base Pink */
+    color: #fff;
+}
+
+/* Color List Result Styling */
+#colorListResult {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
